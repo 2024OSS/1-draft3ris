@@ -1,81 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
-    <!--css part-->
+<!--css part-->
 <style>
     /*applies style to entire body*/
     body {
         font: 100% Lucida Sans;
         line-height: 26px;
+        margin: 10px;
+        padding:0;
     }
-    .topbar, .bottombar, .sidebar, .menubar{
-        border-width: 6px;
-        margin:6px;
+
+    .bottom {
+        position: relative;
+        overflow: auto;
     }
-    .topbar{
+
+    .topbar,
+    .bottombar,
+    .sidebar,
+    .item {
+        border-radius: 6px;
+        border-width: 3px;
+        margin:4px;
+    }
+
+    .topbar {
         background: #009933;
         color: white;
         padding: 20px;
     }
-    .menubar{
-        float:left;
+
+    .menubar {
+        float: left;
+        width:210px;
+        margin-right: 0px;
+        margin-left: -40px;
     }
-    .item{
-        background:#e6e6e6;
-        border-color:#808080;
-        margin-bottom:10px;
+
+    .item {
+        background: #e6e6e6;
+        border: 1px solid #80808052;
+        margin-bottom:5px;
         list-style: none;
-        padding:3px;
+        padding: 3px;
+    }
+
+    .item:hover{
+        background:#ffffff;
+    }
+
+    .content {
+        margin-left: 190px;
+        margin-right: 190px;
+        padding: 5px;
+    }
+
+    .sidebar {
+        width:180px;
+        background: rgb(40, 94, 242);
+        color: white;
+        padding:5px;
+        float:right;
+        bottom:0;
+        right:0;
+        top:0;
+        position:absolute;
+    }
+    
+    .bottombar{
+        text-align: center;
+        font-size:80%;
+        border-width:1px;
+        border-style:solid;
+        border-color:#80808052;
+        background:lightgray;
+    }
+
+    .menulink{
+        color:#000000;
+        text-decoration:underline;
+    }
+
+    .menulink:hover{
+        text-decoration:none;
+    }
+
+    #textlink1, #textlink2, #textlink3{
+        color:#000000;
+    }
+
+    #textlink1:hover, #textlink2:hover, #textlink3:hover{
+        text-decoration: none;
+    }
+
+    @media (max-width:800px){
+        .sidebar{
+            width:auto;
+            position:relative;
+        }
+        .content{
+            margin-right:0;
+        }
+    }
+    @media (max-width:600px){
+        .menubar{
+            width:auto;
+            float:none;
+        }
+        .content{
+            margin-left:0;
+        }
     }
 </style>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <div class="topbar">
-    <h1>
-        Welcome to 22300348's Homepage
-    </h1>
-    <p>
-        Use the menu to select different Stylesheets
-    </p>
-    </div>
-    <div class="bottom">
-        <div class="menubar">
-            <ul>
-                <li class="item">Stylesheet 1</li>
-                <li class="item">Stylesheet 2</li>
-                <li class="item">Stylesheet 3</li>
-                <li class="item">Stylesheet 4</li>
-                <li class="item">No Stylesheet</li>
-            </ul>
-        </div>
-        <div class="content">
+    
+    <div class="contentbox">
+        
+        <div class="topbar">
+            <h1>
+                Welcome to 22300348's Homepage
+            </h1>
+            <p>
+                Use the menu to select different Stylesheets
+            </p>
+        </div> <!--topbar-->
 
-        </div>
-        <div class="sidebar">
+        <div class="bottom">
+            <div class="menubar">
+                <ul>
+                    <a href="./style1.html" class="menulink"><li class="item" style="background-color:#009933; color:white; text-decoration-color: white; text-decoration: underline;">Stylesheet 1</li></a>
+                    <li class="item">Stylesheet 2</li>
+                    <li class="item">Stylesheet 3</li>
+                    <a href="./style2.html" class="menulink"><li class="item">Stylesheet 4</li></a>
+                    <a href="./nostyle.html" class="menulink"><li class="item">No Stylesheet</li></a>
+                </ul>
+            </div><!--menubar-->
 
-        </div>
+            <div class="content">
+                <h1>Same Page Different Stylesheets</h1>
+                <p>
+                    This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change
+                    the
+                    layout of this page by selecting different stylesheets in the menu, or by selecting one of the following
+                    links:<br>
+                    <a href="./style1.html" id="textlink1">Stylesheet1</a> , 
+                    Stylesheet2 , 
+                    Stylesheet3 , 
+                    <a href="./style2.html" id="textlink2">Stylesheet4</a> .
+                </p>
+                <h1>No Styles</h1>
+                <p>
+                    This page uses DIV elements to group different sections of the HTML page. Click here to see how the page
+                    looks
+                    like with no stylesheet:<br>
+                    <a href="./nostyle.html" id="textlink3">No Stylesheet</a>.
+                </p>
+            </div><!--content-->
+
+            <div class="sidebar">
+                <h3>Side-Bar</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                    laoreet
+                    dolore magna aliquam erat volutpat.
+                </p>
+            </div><!--sidebar-->
+        </div><!--bottom-->
+
         <div class="bottombar">
+            <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+                dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+                suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in
+                vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et
+                accumsan et
+                iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla
+                facilisi.
+            </p>
+        </div><!--bottombar-->
+    </div><!--contentbox-->
 
-        </div>
-    </div>
-    <h1>Same Page Different Stylesheets</h1>
-    <p>
-        This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:
-        Stylesheet1, Stylesheet2, Stylesheet3, Stylesheet4.
-    </p>
-    <h1>No Styles</h1>
-    <p>
-        This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet:
-        No Stylesheet.
-    </p>
-    <h3>Side-Bar</h3>
-    <p>
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
-    </p>
 </body>
+
 </html>
