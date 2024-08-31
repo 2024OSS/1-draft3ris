@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    body{
+        background:#212529;
+        color:#dee2e6;
+        font:100% Segoe UI;
+        margin:0;
+        padding:0;
+    }
+    .firstwrapper, .secondwrapper, .thirdwrapper, .fourthwrapper{
+        background:#2b3035;
+        padding-top:47px;
+        padding-bottom:47px;
+        padding-left:60px;
+        padding-right:60px;
+        top:0;
+        left:0;
+    }
+    .first, .second, .third{
+        background:#343a40;
+        padding-left:15px;
+        padding-top:2px;
+        padding-bottom:2px;
+        border-radius:7px;
+    }
+    .first a{
+        color:#6ea8fe;
+    }
+
+    .secondwrapper, .thirdwrapper, .fourthwrapper{
+        margin-top:50px;
+    }
+    .second, .third{
+        padding:20px;
+    }
+
+    .second a, .third a, .fourth a{
+        font-weight: bold;
+        color:white;
+        text-decoration: none;
+    }
+
+    .fourth{
+        padding:10px;
+        padding-bottom:20px;
+        border-radius:4px;
+    }
+
+    #firstfourthitem, #secondfourthitem, #lastfourthitem{
+        float:left; 
+        width:32%;
+        background:#343a40;
+        padding-left:12px;
+        padding-top:12px;
+        padding-bottom:12px;
+        text-align: center;
+        overflow:auto;
+        border-width:4px;
+    }
+
+    #firstfourthitem{
+        padding-bottom:7px;
+    }
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="firstwrapper">
+    <div class="first"><p><a href="#">Home</a> &nbsp/&nbsp <a href="#">Library</a> &nbsp/&nbsp Data</p></div>
+    </div>
+
+    <div class="secondwrapper">
+        <div class="second"><a href="#"><img src="home.png" width="24px" height="24px"/></a> &nbsp/&nbsp <a href="#">Library</a> &nbsp/&nbsp Data <br></div>
+    </div>
+
+    <div class="thirdwrapper">
+        <div class="third">
+            <a href="#"><img src="home.png" width="24px"></a>
+            <img src="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20width%3D'16'%20height%3D'16'%20fill%3D'%236c757d'%3E%3Cpath%20fill-rule%3D'evenodd'%20d%3D'M4.646%201.646a.5.5%200%200%201%20.708%200l6%206a.5.5%200%200%201%200%20.708l-6%206a.5.5%200%200%201-.708-.708L10.293%208%204.646%202.354a.5.5%200%200%201%200-.708z'%2F%3E%3C%2Fsvg%3E"/>&nbsp<a href="#">Library</a>&nbsp<img src="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20width%3D'16'%20height%3D'16'%20fill%3D'%236c757d'%3E%3Cpath%20fill-rule%3D'evenodd'%20d%3D'M4.646%201.646a.5.5%200%200%201%20.708%200l6%206a.5.5%200%200%201%200%20.708l-6%206a.5.5%200%200%201-.708-.708L10.293%208%204.646%202.354a.5.5%200%200%201%200-.708z'%2F%3E%3C%2Fsvg%3E"/>
+            &nbspData&nbsp <br>
+        </div>
+    </div>
+
+    <div class="fourthwrapper">
+        <div class="fourth">
+            <div id="firstfourthitem"><img src="home.png" width="24px"> Home <img src="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20width%3D'16'%20height%3D'16'%20fill%3D'%236c757d'%3E%3Cpath%20fill-rule%3D'evenodd'%20d%3D'M4.646%201.646a.5.5%200%200%201%20.708%200l6%206a.5.5%200%200%201%200%20.708l-6%206a.5.5%200%200%201-.708-.708L10.293%208%204.646%202.354a.5.5%200%200%201%200-.708z'%2F%3E%3C%2Fsvg%3E" style="float:right; height:24px; object-fit:contain;"/></div>
+            <div id="secondfourthitem">Library<img src="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20width%3D'16'%20height%3D'16'%20fill%3D'%236c757d'%3E%3Cpath%20fill-rule%3D'evenodd'%20d%3D'M4.646%201.646a.5.5%200%200%201%20.708%200l6%206a.5.5%200%200%201%200%20.708l-6%206a.5.5%200%200%201-.708-.708L10.293%208%204.646%202.354a.5.5%200%200%201%200-.708z'%2F%3E%3C%2Fsvg%3E" style="float:right; height:24px; object-fit:contain;"/></div>
+            <div id="lastfourthitem">Data<img src="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20width%3D'16'%20height%3D'16'%20fill%3D'%236c757d'%3E%3Cpath%20fill-rule%3D'evenodd'%20d%3D'M4.646%201.646a.5.5%200%200%201%20.708%200l6%206a.5.5%200%200%201%200%20.708l-6%206a.5.5%200%200%201-.708-.708L10.293%208%204.646%202.354a.5.5%200%200%201%200-.708z'%2F%3E%3C%2Fsvg%3E" style="float:right; height:24px; object-fit:contain;"/></div>
+        </div>
+    </div>
+</body>
+</html>
