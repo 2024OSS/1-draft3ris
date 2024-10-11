@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    
+    body{
+        font:100% Courier New;
+        background-color:black;
+        color:#84c754;
+        margin:15px;
+        line-height:25px;
+    }
+
+    .contentbox{
+        position:relative;
+        overflow:auto;
+    }
+
+    .content{
+        padding:15px;
+    }
+
+    .topbar{
+        padding:15px;
+    }
+
+    .topbar h1, .topbar p{
+        margin:0;
+    }
+
+    .sidebar{
+        top:0;
+        right:0;
+        position:absolute;
+        width:340px;
+        padding:8px;
+        color:white;
+        border-radius:4px;
+        border-width:1px;
+        border-style:solid;
+        border-color:white;
+        font-size:80%;
+        line-height:20px;
+    }
+
+    .bottombar{
+        position:relative;
+        border-color:white;
+        border-width:1px;
+        border-style:solid;
+        border-radius:4px;
+        font-size:70%;
+        text-align:center;
+        line-height:14px;
+        padding-left:10px;
+        padding-right:10px;
+        color:white;
+    }
+
+    .item, .menulink{
+        text-decoration: none;
+        color: #84c754;
+    }
+
+    .item:hover{
+        color:white;
+    }
+
+    .content{
+        position:relative;
+    }
+
+    #textlink1, #textlink2, #textlink3{
+        color:white;
+    }
+    
+    #textlink1:hover, #textlink2:hover, #textlink3:hover{
+        color: #84c754;
+    }
+
+    @media (max-width:600px){
+        .sidebar{
+            position:relative;
+            width:auto;
+            margin-bottom:10px;
+        }
+    }
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="topbar">
+        <h1>
+            Welcome to 22300348's Homepage
+        </h1>
+        <p>
+            Use the menu to select different Stylesheets
+        </p>
+    </div> <!--topbar-->
+    <div class="contentbox">
+        <div class="menubar">
+            <ul>
+                <a href="./style1.html" class="menulink"><li class="item">Stylesheet 1</li></a>
+                <li class="item">Stylesheet 2</li>
+                <li class="item">Stylesheet 3</li>
+                <a href="./style2.html" class="menulink"><li class="item" style="font-weight:bold; color:white">Stylesheet 4</li></a>
+                <a href="./nostyle.html" class="menulink"><li class="item">No Stylesheet</li></a>
+            </ul>
+        </div><!--menubar-->
+        
+        <div class="content">
+            <h1>Same Page Different Stylesheets</h1>
+            <p>
+                This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change
+                the
+                layout of this page by selecting different stylesheets in the menu, or by selecting one of the following
+                links:<br>
+                <a href="./style1.html" id="textlink1">Stylesheet1</a>, 
+                Stylesheet2, 
+                Stylesheet3, 
+                <a href="./style2.html" id="textlink2">Stylesheet4</a>.
+            </p>
+            <h2>No Styles</h2>
+            <p>
+                This page uses DIV elements to group different sections of the HTML page. Click here to see how the page
+                looks
+                like with no stylesheet:<br>
+                <a href="./nostyle.html" id="textlink3">No Stylesheet</a>.
+            </p>
+        </div><!--content-->
+
+        <div class="sidebar">
+            <h3>Side-Bar</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                laoreet
+                dolore magna aliquam erat volutpat.
+            </p>
+        </div><!--sidebar-->
+    
+        <div class="bottombar">
+            <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+                dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+                suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in
+                vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et
+                accumsan et
+                iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla
+                facilisi.
+            </p>
+        </div>
+    </div><!--contentbox-->
+</body>
+</html>
